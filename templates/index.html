@@ -41,18 +41,19 @@
     </style>
 </head>
 <body>
-    <h2>Introduce the values</h2>
+    <h2>Introduzca los valores</h2>
     
     <form action="/" method="post">
-        Petal width: <input type="number" step="any" name="val1" required><br><br>
-        Petal length: <input type="number" step="any" name="val2" required><br><br>
-        Sepal width: <input type="number" step="any" name="val3" required><br><br>
-        Sepal length: <input type="number" step="any" name="val4" required><br><br>
+        Ancho del pétalo: <input type="number" step="any" name="val1" required><br><br>
+        Longitud del pétalo: <input type="number" step="any" name="val2" required><br><br>
+        Ancho de Sépalo: <input type="number" step="any" name="val3" required><br><br>
+        Longitud de Sépalo: <input type="number" step="any" name="val4" required><br><br>
         <input type="submit" value="Predict">
     </form>
     
     {% if prediction != None %}
-        <h3>Prediction: {{ prediction }}</h3>
+        <h3>La predicción: {{ prediction }}</h3>
     {% endif %}
+    <h1>Se ha usado el siguiente modelo de árbol creado por mi (Ander): https://github.com/4GeeksAcademy/tree-ander/tree/main/src</h1>
 </body>
 </html>
