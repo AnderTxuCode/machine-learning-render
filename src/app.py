@@ -1,6 +1,8 @@
 from flask import Flask, request, render_template
 import joblib
+from dotenv import load_dotenv
 
+load_dotenv()
 app = Flask(__name__)
 model = joblib.load(open("../models/decision_tree_classifier_default_42.sav", "rb"))
 class_dict = {
@@ -13,7 +15,6 @@ class_dict = {
 def index():
     if request.method == "POST":
         
-        # Obtain values from form
         val1 = float(request.form["val1"])
         val2 = float(request.form["val2"])
         val3 = float(request.form["val3"])
