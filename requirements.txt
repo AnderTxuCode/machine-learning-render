@@ -4,4 +4,4 @@ requests
 scikit-learn
 flask
 gunicorn
-dotenv
+python-dotenv==1.0.0
